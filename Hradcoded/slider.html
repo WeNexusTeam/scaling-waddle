@@ -1,0 +1,273 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>The HTML5 Herald</title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="owlcarousel/owl.carousel.min.css">
+  <link rel="stylesheet" href="owlcarousel/owl.theme.default.min.css">
+  <!--  -->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- font awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+
+</head>
+
+<body>
+  <style>
+      *{
+  font-family: calibri;
+  margin: 0; 
+  padding: 0;
+  box-sizing: border-box;
+}
+#wenexus-popular-categories{
+  background: #f3f5f6;
+  padding: 50px 20px;
+}
+#wenexus-popular-categories h1{
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 40px;
+}
+.wenexus-slider-container{
+  width: 95%;
+  margin: 0 auto;
+}
+.wenexus-img-wrapper{
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background: #e7ebee;
+}
+.wenexus-img-wrapper img{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  /*border-radius: 100%;*/
+  text-align: center;
+  padding: 20px;
+}
+.wenexus-single-item{
+  width: 200px;
+}
+.wenexus-single-item .wenexus-item-name{
+  padding-top: 20px;
+  width: 160px;
+  text-align: center;
+  display: inline-block;
+}
+.wenexus-item-link{
+  padding: 0 20px;
+}
+.wenexus-item-name {
+  text-decoration: none;
+  font-size: 20px;
+  position: relative;
+  color: #1e2d7d;
+}
+
+.wenexus-view-all{
+  margin-top: 30px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
+}
+.wenexus-view-all:hover{
+  text-decoration: underline;
+}
+.wenexus-img-wrapper:hover img{
+  transform: scale(1.03);
+}
+.wenexus-img-wrapper img{
+  transition-property: transform;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  /*transition-delay: 1s;*/
+}
+.wenexus-single-item:hover .wenexus-item-name{
+  color: blue;
+  transform: translateX(-14px);
+    transition: transform 0.35s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.wenexus-single-item i{
+  display: none;
+  position: absolute;
+  top: 53.5%;
+  width: 5px; 
+  /*
+  padding-left: 2px;
+  transition-duration: 5s;
+  transition-property: transform; 
+  transition-timing-function: ease-in-out;*/
+}
+
+.wenexus-single-item:hover i{
+  color: blue;
+  display: inline-block;
+  transform: translateX(10px);
+  transition: all .3s !important;
+}
+/*.flickity-button{
+  background: #87CEEB !important;
+  display: none;
+   transition-property: transform;
+   transition-duration: .3s;
+   transition-timing-function: ease-in;
+}*/
+.flickity-prev-next-button{
+  /*width: 0;*/
+  /*background: #87CEEB !important;*/
+  /*opacity: 0;*/
+}
+.flickity-prev-next-button{
+  position: absolute;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    top: calc(50% - 25px);
+    border-radius: 100%;
+    visibility: visible;
+    background: var(--flickity-arrow-color);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    transform: scale(0.7);
+    z-index: 1;
+    
+}
+.flickity-prev-next-button[disabled]{
+  visibility: hidden;
+  opacity: 0;
+}
+.wenexus-slider-container:hover .flickity-prev-next-button{
+  opacity: 1;
+  /*transform: scale(1);*/
+}
+.flickity-button:hover {
+  background: lightblue !important;
+}
+  </style>
+
+
+
+  <section id="wenexus-popular-categories">
+    <h1>Popular Categories</h1>
+     <div class="wenexus-slider-container main-carousel">
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+      <a href="#" class="wenexus-item-link">
+        <div class="wenexus-single-item">
+          <div class="wenexus-img-wrapper">
+            <img src="headphone.png">
+          </div>
+            <a href="#" class="wenexus-item-name">Headphones <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </a>
+     </div>
+     <a href="#" class="wenexus-view-all">View all</a>
+  </section>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  <script>
+    
+    var elem = document.querySelector('.main-carousel');
+    var flkty = new Flickity( elem, {
+    // options
+    cellAlign: 'left',
+    contain: true,
+    pageDots: false,
+    groupCells: true
+      });
+
+  </script>
+</body>
+</html>
